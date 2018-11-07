@@ -20,39 +20,42 @@
     <div class="container">
 
         <!-- Jumbotron -->
-        <div class="jumbotron">
+        <div class="jumbotron blue">
             <h1 class="text-center">Anytime is Train Time</h1>
             <h3 class="text-center">Choo Choo. Chee Chee.</h3>
         </div>
-        <div class="card-header">
-            Current Train Schedule
-        </div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Train Name</th>
-                    <th>Destination</th>
-                    <th>Frequency (min)</th>
-                    <th>Next Arrival</th>
-                    <th>Minutes Away</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <tr>
-                    <td>Via Rail</td>
-                    <td>Toronto</td>
-                    <td>60</td>
-                    <td>06:38 PM</td>
-                    <td>30 </td>
-                </tr>
+        <div class="card card-default">
+            <div class="card-header blue">
+                Current Train Schedule
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>Via Rail</td>
+                        <td>Toronto</td>
+                        <td>60</td>
+                        <td>06:38 PM</td>
+                        <td>30 </td>
+                    </tr>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Sign-Up Card-->
+        <br>
 
         <div class="card card-default">
-            <div class="card-header">
+            <div class="card-header blue">
                 Add Train
             </div>
             <div class="card-body">
@@ -60,22 +63,22 @@
                 <!-- Sign-up Form (note the various input "types")-->
                 <form role="form">
                     <div class="form-group row">
-                        <label for="name-input">Train Name:</label>
+                        <label for="name-input" class="bold">Train Name:</label>
                         <input class="form-control" id="name" type="text" placeholder="Go Train, Via Rail...">
                     </div>
                     <div class="form-group row">
-                        <label for="role-input">Destination</label>
+                        <label for="role-input" class="bold">Destination</label>
                         <input class="form-control" id="dest" type="text" placeholder="Vancouver, Ottawa, Montreal...">
                     </div>
                     <div class="form-group row">
-                        <label for="date-input">First train time (HHmm - military time)</label>
-                        <input class="form-control" id="time" type="text" placeholder="Ex: 11 pm = 2300, 2 am = 0200">
+                        <label for="date-input" class="bold">First train time (HHmm - military time)</label>
+                        <input class="form-control" id="time" type="number" placeholder="Ex: 11 pm = 2300, 2 am = 0200">
                     </div>
                     <div class="form-group row">
-                        <label for="rate-input">Frequency (min)</label>
-                        <input class="form-control" id="freq" placeholder="25, 10, 5..." />
+                        <label for="rate-input" class="bold">Frequency (min)</label>
+                        <input class="form-control" id="freq" type="number" placeholder="25, 10, 5..." />
                     </div>
-                    <button class="btn btn-primary" id="submit" type="button">Submit</button>
+                    <button class="btn blue" id="submit" type="button">Submit</button>
                 </form>
             </div>
         </div>
